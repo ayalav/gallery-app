@@ -1,0 +1,18 @@
+    <div class="header">
+        <img src="/assets/ss.png" alt="" class="avatar">
+        <h3>{{selectedPicture?.artistName}}</h3>
+        <i class="fa fa-phone"></i>
+        <i class="fa fa-video-camera"></i>
+        <i class="fa fa-ellipsis-v"></i>
+    </div>
+    <div class="chat">
+        <p>Today</p>
+        <div *ngFor="let msg of chatMessages">
+            <div class="message" [class]="msg.user === myName ? 'response' : ''" >
+                <strong>{{ msg.user }}:</strong>
+                {{ msg.message }}
+            </div>
+        </div>
+    </div>
+    <input placeholder="What do you want to say?" (keydown.enter)="sendMessage($event)" [(ngModel)]="newMessage">
+    <i class="fa fa-paper-plane send"></i>

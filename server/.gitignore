@@ -1,0 +1,84 @@
+# Compiled files
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.exe.config
+
+# User-specific files
+*.suo
+*.user
+*.userprefs
+*.vscode
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio files
+.vscode/
+.vs/
+*.sln
+*.suo
+*.user
+*.csproj
+*.csproj.user
+*.sln.DotSettings
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet
+packages/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Visual Studio cache
+.vscode/cache/*
+.vscode/tasks.json
+.vscode/tasks.json.bak
+.vscode/launch.json
+.vscode/launch.json.bak
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+ehthumbs.db
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN

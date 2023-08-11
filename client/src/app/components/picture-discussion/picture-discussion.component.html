@@ -1,0 +1,12 @@
+<div class="picture-discussion">
+  <div class="card pic">
+    <button class="btn" (click)="onBack()"><<&nbsp; Back</button>
+    <h1>{{selectedPicture?.imageName}}</h1>
+    <h3>{{selectedPicture?.artistName}}</h3>
+    <img [src]="selectedPicture?.imageUrl" />
+    <p>{{selectedPicture?.description}}</p>
+  </div>
+  <div class="card chat">
+    <app-chat></app-chat>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+.picture-discussion {
+  display: flex;
+  margin: 40px;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.card {
+  flex: 0 0 840px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  color: black;
+  font-family: cursive;
+
+  .btn {
+    width: 120px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+    color: var(--accent-color);
+    font-size: 18px;
+    line-height: 38px;
+    user-select: none;
+    cursor: pointer;
+    transition: any 200ms ease-in-out;
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: #fff;
+    }
+  }
+
+  h1 {
+    margin: 20px 2px;
+  }
+
+  h3 {
+    margin: 0 2px;
+  }
+
+  img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+
+  p {
+    margin: 0 2px;
+  }
+}
+
+.chat {
+  flex: 1 1;
+  background-color: #fff;
+}
