@@ -1,3 +1,14 @@
+.data{
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+
+  i{
+    padding-right: 10px;
+    color: var(--accent-color);
+  }
+}
+
 .picture-discussion {
   display: flex;
   margin: 40px;

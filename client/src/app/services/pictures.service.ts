@@ -20,5 +20,4 @@ export class PicturesService {
   setSelectedPicture(picture: Picture) {
     this.selectedPictureSubject.next(picture);
   }
-
 }

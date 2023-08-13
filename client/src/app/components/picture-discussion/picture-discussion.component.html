@@ -1,10 +1,19 @@
 <div class="picture-discussion">
   <div class="card pic">
-    <button class="btn" (click)="onBack()"><<&nbsp; Back</button>
-    <h1>{{selectedPicture?.imageName}}</h1>
-    <h3>{{selectedPicture?.artistName}}</h3>
-    <img [src]="selectedPicture?.imageUrl" />
-    <p>{{selectedPicture?.description}}</p>
+    <button class="btn" (click)="onBack()">
+      <<&nbsp; Back</button>
+        <h1>{{selectedPicture?.imageName}}</h1>
+        <h3>{{selectedPicture?.artistName}}</h3>
+        <img #imageElement [src]="selectedPicture?.imageUrl" (load)="getData(imageElement)" />
+        <div class="data">
+          <i class="fa fa-info-circle"></i>
+          <b>resolution: </b> {{this.selectedPicture.resolution}} &nbsp;
+          <b>width: </b> {{this.selectedPicture.width}} &nbsp;
+          <b>height: </b> {{this.selectedPicture.height}} &nbsp;
+        </div>
+        <br>
+        <p>{{selectedPicture?.description}}</p>
+
   </div>
   <div class="card chat">
     <app-chat></app-chat>

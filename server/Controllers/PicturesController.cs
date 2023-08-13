@@ -12,6 +12,6 @@ public class PicturesController : ControllerBase
     public ActionResult<List<Picture>> GetPictures()
     {
         return GalleryService.GetPictures();
-    }
+    }    
 }
 

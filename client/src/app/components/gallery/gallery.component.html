@@ -1,7 +1,7 @@
 <div class="title">The gallery</div>
 <div class="search-container">
-<input class="search" type="text" [(ngModel)]="searchTerm" placeholder="Search by name or artist" />
-<i class="fa fa-search"></i>
+  <input class="search" type="text" [(ngModel)]="searchTerm" placeholder="Search by name or artist" />
+  <i class="fa fa-search"></i>
 </div>
 <div class="img-container" *ngFor="let picture of pictures | filter: searchTerm">
   <div class="card" (click)="onSelectedPicture(picture)">

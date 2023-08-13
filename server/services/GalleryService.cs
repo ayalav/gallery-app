@@ -95,5 +95,5 @@ public static class GalleryService
     public static List<Picture> GetPictures()
     {
         return pictures;
-    }
+    }   
 }
